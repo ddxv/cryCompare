@@ -11,6 +11,9 @@ Following requests are supported:
 - HistoHour
 - HistoDay
 
+Wrapper requires following python modules:
+- requests
+
 Requests are devided into two classes:
 - Price
 - History
