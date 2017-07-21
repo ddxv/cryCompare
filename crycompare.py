@@ -15,16 +15,16 @@ class Price:
 		self.__coinsnapshoturl = 'https://www.cryptocompare.com/api/data/coinsnapshot/?'
 		self.__coinsnapshotfull = 'https://www.cryptocompare.com/api/data/coinsnapshotfullbyid/?'
 
-	def coin_list(self):
+	def coinList(self):
 		return self.__get_url(self.__coinlisturl)
 
 	def price(self, from_curr, to_curr, e=None, extraParams=None, sign=False, tryConversion=True):
 		return self.__get_price(self.__priceurl, from_curr, to_curr, e, extraParams, sign, tryConversion)
 
-	def pricemulti(self, from_curr, to_curr, e=None, extraParams=None, sign=False, tryConversion=True):
+	def priceMulti(self, from_curr, to_curr, e=None, extraParams=None, sign=False, tryConversion=True):
 		return self.__get_price(self.__pricemultiurl, from_curr, to_curr, e, extraParams, sign, tryConversion)
 
-	def pricemultifull(self, from_curr, to_curr, e=None, extraParams=None, sign=False, tryConversion=True):
+	def priceMultiFull(self, from_curr, to_curr, e=None, extraParams=None, sign=False, tryConversion=True):
 		return self.__get_price(self.__pricemultifullurl, from_curr, to_curr, e, extraParams, sign, tryConversion)
 
 	def priceHistorical(self, from_curr, to_curr, markets, ts=None, e=None, extraParams=None,
