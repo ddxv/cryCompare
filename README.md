@@ -1,5 +1,5 @@
 # cryCompare
-Python wrapper for CryptoCompare public API
+Python wrapper for Crypto Compare public API
 
 Following requests are supported:
 - CoinList
