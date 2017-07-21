@@ -107,7 +107,7 @@ class Price:
 		if avgType:
 			args.append('avgType=' + avgType)
 		if UTCHourDiff:
-			args.append('UTCHourDiff=' + UTCHourDiff)
+			args.append('UTCHourDiff=' + str(UTCHourDiff))
 		if toTs:
 			args.append('toTs=' + toTs)
 		if not tryConversion:
